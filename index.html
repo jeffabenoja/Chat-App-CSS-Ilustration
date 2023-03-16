@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS assets/style.css">
+  <script src="https://kit.fontawesome.com/f5b3f8b26c.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Chat App CSS Illustration</title>
+</head>
+<body>
+  <main class="grid-container">
+    <section class="chat-app-container bg-primary-400">
+      <div class="chat-app-subContainer bg-secondary-100">
+        <header class="chat-app-header d-flex j-content-between align-items-center">
+          <div class="d-flex align-items-center gap-classic">
+            <div class="back-section"></div>
+            <div class="friend d-flex gap-xxs">
+              <div class="friend-icon"></div>
+              <div class="friend-details">
+                <div class="friend-name">
+                  <p class="clr-primary-400 fw-semi-bold fs-700">Samuel Green</p>
+                </div>
+                <div class="friend-status">
+                  <p class="clr-secondary-200 fs-600">Available to Walk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-info d-flex flex-column" aria-label="Info Button">
+            <span data-type="visually-hidden">
+              Custom button for more info
+            </span>
+            <div class="oval"></div>
+            <div class="oval"></div>
+            <div class="oval"></div>
+          </div>
+        </header>
+        <div class="convo-container d-flex flex-column gap-sm">
+          <div>
+            <div class="msg-box margin-top fs-600 clr-accent-200 margin-bottom">
+              <p>
+                That sounds great. I’d be happy with that.
+              </p>
+            </div>
+            <div class="msg-box fs-600 clr-accent-200">
+              <p>
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+          </div>
+          <div class="reply-msg d-flex flex-column gap-xxs">
+            <div class="dog-images d-flex gap-xxs">
+              <img src="./images/dog-image-1.jpg" alt="Fist Dog" role="img">
+              <img src="./images/dog-image-2.jpg" alt="Fist Dog" role="img">
+              <img src="./images/dog-image-3.jpg" alt="Fist Dog" role="img">
+            </div>
+            <div class="msg-box fs-600 align-self-end">
+              <p>
+                Here are a few pictures. She’s a happy girl!
+              </p>
+            </div>
+            <div class="msg-box fs-600 align-self-end">
+              <p>
+                Can you make it?
+              </p>
+            </div>
+          </div>
+          <div class="friend-msg d-flex flex-column gap-xxs">
+            <div class="msg-box fs-600 clr-accent-200">
+              <p>
+                She looks so happy! The time we discussed works. How long shall I take her out for?
+              </p>
+            </div>
+            <div class="offer-box d-flex align-items-center gap-xxs bg-gradient">
+              <div class="loading-icon "></div>
+              <div class="offer-details d-flex j-content-between align-items-center clr-primary-400">
+                <p class="fs-600">
+                  30 minute walk
+                </p>
+                <p class="price fw-bold fs-750">
+                  $29
+                </p>
+              </div>
+            </div>
+            <div class="offer-box d-flex align-items-center gap-xxs bg-gradient">
+              <div class="loading-icon"></div>
+              <div class="offer-details d-flex align-items-center j-content-between clr-primary-400">
+                <p class="fs-600">
+                  1 hour walk
+                </p>
+                <p class="price fw-bold fs-750">
+                  $49
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="send-msg">
+              <input 
+                type="text"
+                id="text-msg"
+                name="msg-input"
+                placeholder="Type a message..."
+                autocomplete="off"
+              />
+              <button type="button" id="btn" class="send-icon d-flex align-items-center j-content-center bg-primary-900" role="button" aria-label="Submit Button" onclick="myFunction()">
+                <i class="fa-solid fa-angle-right "></i>
+              </button>
+          </div>
+        </div>
+      </section>
+      <section class="chat-app-intro">
+        <h1 class="title text-center fs-900 clr-primary-900 fw-semi-bold text-md-left">
+          Simple booking
+        </h1>
+        <p class="description clr-primary-700 text-center text-md-left">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
+      </div>
+    </section>
+  </main>
+  <script>
+    function myFunction() {
+      document.getElementById("btn").addEventListener('click', () => {
+          const text = document.getElementById('text-msg');
+          text.value = "";
+      }, false);
+    }
+  </script>
+</body>
+</html>
