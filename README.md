@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [See solution here](https://github.com/jeffabenoja/Chat-App-CSS-Ilustration.git)
-- Live Site URL: [Go to site](https://your-live-site-url.com)
+- Live Site URL: [Go to site](https://jeffabenoja.github.io/Chat-App-CSS-Ilustration/)
 
 ## My process
 
