@@ -11,7 +11,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-
 - [Author](#author)
 
 ## Overview
@@ -26,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot.jpg)
+![](./images/Screenshot.jpg
 
 ### Links
 
